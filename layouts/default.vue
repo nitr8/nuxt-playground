@@ -1,27 +1,47 @@
 <template>
-  <div>
+  <div id="app">
+    <div id="nav">
+      <nuxt-link to="/">
+        Home
+      </nuxt-link>|
+      <nuxt-link to="/about">
+        About
+      </nuxt-link>
+    </div>
     <nuxt />
   </div>
 </template>
 
 <style>
-html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
-  font-size: 16px;
-  word-spacing: 1px;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -moz-osx-font-smoothing: grayscale;
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
 }
-
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-  margin: 0;
+#nav {
+  padding: 30px;
+  a {
+    font-weight: bold;
+    color: #42b983;
+    text-decoration: none;
+    &.nuxt-link-exact-active {
+      color: #35495e;
+    }
+  }
+}
+.landing {
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.container {
+  margin: 0 auto;
+  min-height: 100vh;
 }
 
 .button--green {
@@ -53,3 +73,20 @@ html {
   background-color: #35495e;
 }
 </style>
+<script>
+export default {
+  data () {
+    return {
+      title: 'Our App'
+    }
+  },
+  head () {
+    return {
+      title: this.title,
+      meta: [
+        { hid: 'description', name: 'description', content: 'Our remarkable project' }
+      ]
+    }
+  }
+}
+</script>
