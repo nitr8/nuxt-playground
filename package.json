@@ -1,8 +1,8 @@
 {
   "name": "nuxt-material-admin",
   "version": "1.0.0",
-  "description": "vue-material-admin integration with Nuxt.js",
-  "author": "Mohamed Eddami",
+  "description": "Our NuxtJS and material project",
+  "author": "nitr8",
   "private": true,
   "scripts": {
     "dev": "nuxt",
