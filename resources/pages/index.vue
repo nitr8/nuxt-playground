@@ -1,3 +1,31 @@
+<template>
+  <div class="container">
+    <div>
+      <div class="VueToNuxtLogo">
+        <div class="Triangle Triangle--two" />
+        <div class="Triangle Triangle--one" />
+        <div class="Triangle Triangle--three" />
+        <div class="Triangle Triangle--four" />
+      </div>
+      <h1 class="title">
+        Our App
+      </h1>
+      <h2 class="subtitle">
+        Our NuxtJS and AdonisJS project
+      </h2>
+      <div class="links">
+        <a href="https://nuxtjs.org/" target="_blank" class="button--green">
+          Documentation
+        </a>
+        <a href="https://github.com/nuxt/nuxt.js" target="_blank" class="button--grey">
+          GitHub
+        </a>
+      </div>
+    </div>
+  </div>
+</template>
+
+<style>
 .VueToNuxtLogo {
   display: inline-block;
   animation: turn 2s linear forwards 1s;
@@ -66,3 +94,4 @@
     left: 70px;
   }
 }
+</style>

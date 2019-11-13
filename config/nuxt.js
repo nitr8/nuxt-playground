@@ -1,6 +1,9 @@
+const { resolve } = require('path')
 
-export default {
+module.exports = {
   mode: 'universal',
+  dev: process.env.NODE_ENV === 'development',
+  srcDir: resolve(__dirname, '..', 'resources'),
   /*
   ** Headers of the page
   */

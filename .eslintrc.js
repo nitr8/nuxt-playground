@@ -4,6 +4,9 @@ module.exports = {
     browser: true,
     node: true
   },
+  globals: {
+    use: true
+  },
   parserOptions: {
     parser: 'babel-eslint'
   },
@@ -13,5 +16,6 @@ module.exports = {
   ],
   // add your custom rules here
   rules: {
+    'nuxt/no-cjs-in-config': 'off'
   }
 }
