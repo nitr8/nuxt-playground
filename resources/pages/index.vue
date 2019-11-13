@@ -8,7 +8,7 @@
         <div class="Triangle Triangle--four" />
       </div>
       <h1 class="title">
-        Our App
+        nuxt-AdonisJS
       </h1>
       <h2 class="subtitle">
         Our NuxtJS and AdonisJS project
