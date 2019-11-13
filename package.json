@@ -1,14 +1,15 @@
 {
-  "name": "Our-Vue-App",
+  "name": "NuxtJS-App",
   "version": "1.0.0",
-  "description": "My flawless Nuxt.js project",
+  "description": "Our uberninja NuxtJS project",
   "author": "nitr8",
   "private": true,
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate"
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."
   },
   "dependencies": {
     "css-loader": "^3.2.0",
@@ -17,5 +18,11 @@
     "sass-loader": "^8.0.0",
     "webpack": "^4.41.2"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "@nuxtjs/eslint-config": "^1.0.1",
+    "@nuxtjs/eslint-module": "^1.0.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.16.0",
+    "eslint-plugin-nuxt": ">=0.4.2"
+  }
 }
